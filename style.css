@@ -1,0 +1,342 @@
+ /* css reset */
+   *{
+
+       margin: 0;
+       padding: 0;
+   }
+
+   html{
+    scroll-behavior: smooth;
+   }
+   /* css variables */
+
+  
+
+   /* navigation bar */
+   #nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+    /* margin-top: -14px; */
+    
+   }
+   #nav::before{
+     top: 0;
+      left: 0;
+    content: '#';
+    background-color: black;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+   }
+   /*   navigation bar: logo and image */
+    #logo{
+      margin: 20px 22px;
+    }
+
+    img{
+     width: 45px;
+    height: 45px;
+    margin-top: -7px;
+    }
+    /*   navigation bar: list styling */
+    ul{
+      display: flex;
+      list-style: none;
+      font-size: 1.3rem;
+       font-family: "Baloo Bhai 2", sans-serif;
+       font-weight: bold;
+      
+      
+    }
+    ul li a{
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 3px 28px;
+      border-radius: 20px;
+      margin-top: -24px;
+    }
+    
+    ul li a:hover{
+      color: black;
+      background-color: #f2f2f2;
+      box-shadow: 30px 10px 50px black;
+      
+    }
+
+    /* home section */
+
+    
+    #home::before{
+      content: '#';
+      background: url('../foodbg2.jpg') no-repeat center center/cover;
+      position: absolute;
+      height: 115%;
+      width: 100%;
+      z-index: -1;
+      opacity: 0.89;
+      top: 0;
+      left: 0;
+      
+    }
+    #home{
+     
+      display: flex;
+      flex-direction: column;
+      padding: 3px 180px;
+      justify-content: center;
+      height: 400px;
+      align-items: center;
+      
+    }
+
+    /* services centre */
+    .para{
+      color: black;
+      font-size: 1rem;
+      text-align: center;
+    }       
+
+    #services{
+      margin: 34px;
+      display: flex;
+      
+    }
+    #services .box {
+      border: 2px solid brown;
+      margin: -260px 10px;
+      height: 284px;
+      border-radius: 23px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+    }
+    #services .box:hover{
+      transform: scale(1.05);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: -11px 33px 82px black;
+    }
+    
+    #services img{
+      display: block;
+      margin: auto;
+      width: 141px;
+      height: 141px;
+      padding: 14px 23px ;
+      margin-top: 0px;
+      
+    }
+    
+      #Delivery{
+       margin-top: -14px !important;
+    width: 230px !important;
+    height: 158px !important;
+  }
+    
+   #pizza {
+    margin-top: -6px !important;
+    width: 162px !important;
+    height: 149px !important;
+}
+
+   #food1{
+    margin-top: -13px !important;
+    width: 325px !important;
+    height: 155px !important;
+  
+
+   }
+
+   /* clients section */
+
+
+   #client-section{
+    height: 344px;
+   }
+    
+  
+  #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+#client-section img{
+ width: 174px;
+    height: 159px;
+    margin: 39px;
+    margin-top: 24px;
+}
+#client-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#client-row img{
+  height: 169px;
+    margin-top: -8px;
+    width: 400px;
+    padding: 24px;
+}
+#client-section::before{
+  content: '#';
+  position: absolute;
+  background: url(../cooking-991782.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 95%;
+  z-index: -1;
+  opacity: 0.35;
+  margin-top: 10px;
+
+}
+  
+/* contact section */
+ 
+  .h-last{
+    margin-top: 145px !important;
+   text-align: center;
+   font-size: 3.8rem;
+   font-family: "Bree Serif", serif;
+      font-weight: lighter;
+      padding: 33px;
+     
+  }
+
+  #contact-box{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: "Bree Serif", serif;
+      font-weight: lighter;
+      
+   
+  }
+  .name{
+   width: 600px;
+   height: 29px;
+    display: flex;
+    text-align: center;
+    padding: 3px;
+    border-radius: 9px;
+   
+
+  }
+  #contact::before{
+   content: '#';
+   position: absolute;
+   background: url(../contactus.jpg) no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   margin-top: 5px;
+  }
+ .footer{
+  text-align: center;
+  margin-top: 12.8%;
+  padding: 0px 4px;
+  background-color: black;
+  color: white;
+
+ }
+    
+
+    /* utility classes */
+    
+    #home h1{
+      color: white;
+      font-family: "Bree Serif", serif;
+      font-weight: lighter;
+      border: 2px solid whitesmoke;
+    }
+    p{
+      color: white;
+      font-size: 1.5rem;
+      font-family: "Bree Serif", serif;
+      font-weight: lighter;
+    }
+    .hprimary{
+      font-size: 3.8rem;
+      padding: 20px ;
+       font-family: "Bree Serif", serif;
+      font-weight: lighter;
+      text-align: center;
+      margin-top: 32px;
+       text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+    
+     .h-primary{
+      font-size: 3.8rem;
+      text-align: center;
+      font-family: "Bree Serif", serif;
+      font-weight: lighter;
+      padding: 251px;
+    margin-top: 105px;
+
+    }
+    .hsecondary{
+      font-size: 1.8rem;
+      padding: 12px;
+    margin-top: -29px
+    }
+
+    h2{
+      font-family: "Bree Serif", serif;
+      font-weight: lighter;
+    }
+    #btn{
+   font-size: 1.1rem;
+    padding: 7px;
+    margin: 18px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white; 
+    width: 110px;
+    cursor: pointer;
+    font-weight: bold;
+  transition: 0.3s ease;
+    }
+    #btn:hover{
+         box-shadow: 5px 8px 13px black;
+     
+    }
+
+    .centre{
+      text-align: center ;
+    }
+    #submit{
+      display: flex
+;
+    justify-content: center;
+    text-align: center;
+    width: 97px;
+    margin: auto;
+    height: 25px;
+    margin-top: 43px;
+    border-radius: 8px;
+    padding: 3PX;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+   
+    }
+    #submit:hover{
+          box-shadow: 1px -2px 5px black;
+          
+          
+    }
+
+
+    
+
+    
+    
